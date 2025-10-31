@@ -51,16 +51,19 @@ Note: Additional dependencies may be required depending on the specific features
 
 ```python
 from src.prompting.zero_shot import generate_zero_shot_prompt
-from src.prompting.chain_of_thought import generate_chain_of_thought_prompt
-from src.output.structured_output import format_output
 
 # Zero-shot prompting
 prompt = generate_zero_shot_prompt("What is the capital of France?")
-print(format_output(prompt))
+print(prompt)
+```
 
-# Chain-of-thought prompting
-prompt = generate_chain_of_thought_prompt("If I have 2 apples and I give away 1, how many do I have left?")
-print(format_output(prompt))
+### Running the Main Application
+
+```python
+from src.main import main
+
+# Run the main application to see all prompting techniques in action
+main()
 ```
 
 ### Vector Database Operations

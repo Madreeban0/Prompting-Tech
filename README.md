@@ -47,6 +47,8 @@ Note: Additional dependencies may be required depending on the specific features
 
 ## Usage
 
+All code examples below assume you are running from the repository root directory. If you are running from within the `src` directory, remove the `src.` prefix from import statements.
+
 ### Basic Example
 
 ```python

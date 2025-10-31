@@ -62,7 +62,8 @@ print(prompt)
 The main application demonstrates various prompting techniques:
 
 ```bash
-python src/main.py
+cd src
+python main.py
 ```
 
 This will showcase zero-shot, one-shot, multi-shot, chain-of-thought, and dynamic prompting techniques.
@@ -155,7 +156,8 @@ Prompting-Tech/
 Execute the main application:
 
 ```bash
-python src/main.py
+cd src
+python main.py
 ```
 
 This will demonstrate various prompting techniques, evaluate model performance, run tests, and log token usage.

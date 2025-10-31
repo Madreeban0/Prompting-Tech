@@ -43,6 +43,8 @@ Install required dependencies:
 pip install numpy
 ```
 
+Note: Additional dependencies may be required depending on the specific features you plan to use. The core functionality requires numpy for vector operations and similarity calculations.
+
 ## Usage
 
 ### Basic Example
@@ -83,10 +85,12 @@ results = vector_db.find_most_similar(query_embedding, top_k=5)
 
 ```python
 from src.evaluation.metrics import evaluate_model
-from src.evaluation.dataset import load_evaluation_dataset
 
-# Load dataset and evaluate
-dataset = load_evaluation_dataset()
+# Example predictions and labels
+predictions = [1, 0, 1, 1, 0]
+labels = [1, 0, 1, 0, 0]
+
+# Evaluate model performance
 results = evaluate_model(predictions, labels)
 print(results)
 ```

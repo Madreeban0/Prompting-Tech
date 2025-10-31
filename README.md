@@ -59,18 +59,18 @@ print(prompt)
 
 ### Running the Main Application
 
-```python
-from src.main import main
+The main application demonstrates various prompting techniques:
 
-# Run the main application to see all prompting techniques in action
-main()
+```bash
+python src/main.py
 ```
+
+This will showcase zero-shot, one-shot, multi-shot, chain-of-thought, and dynamic prompting techniques.
 
 ### Vector Database Operations
 
 ```python
 from src.vector_db.vector_database import VectorDatabase
-from src.embeddings.embedding_utils import generate_embeddings
 
 # Initialize vector database
 vector_db = VectorDatabase()
@@ -82,6 +82,7 @@ vector_db.add_embedding(embedding, id="doc1")
 # Find similar vectors
 query_embedding = [0.15, 0.25, 0.35, 0.45]
 results = vector_db.find_most_similar(query_embedding, top_k=5)
+print(results)
 ```
 
 ### Model Evaluation
